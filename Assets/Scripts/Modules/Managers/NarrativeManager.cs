@@ -7,8 +7,25 @@ public class NarrativeManager : Singleton<NarrativeManager>
     private GameObject narrativeManager;
     private NarrativeManagerFSM statemachine;
 
-    private void Awake()
+
+
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+
+
+
+
     }
+
+
+    public void ResetNarrative() {
+        
+    
+    
+    }
+
+
+
 }
