@@ -9,21 +9,28 @@ public class GameManager : Singleton<GameManager>
 {
     public bool isInGame { get; private set; }
     private GameManagerFSM stateMachine;
+    public Camera cam;
+    public Vector3 mousePos3;
+    public Vector2 mousePos2;
+    public bool isPulling = false;
     protected override void Awake()
     {
         base.Awake();
       
         DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(GameObject.Find("Canvas"));
-        DontDestroyOnLoad(GameObject.Find("UICamera"));
+        AddEventListener(EventName.BlackHolePull, args =>
+        {
+            //isPulling = !isPulling;
+
+        });
         Application.targetFrameRate = 60;
-        SaveManager.instance.Init();
-        AudioManager.instance.Init();
+
     }
 
     void Start()
     {
         stateMachine = new GameManagerFSM(this);
+        cam = Camera.main;
         // LevelManager.instance.BackToMainMenu();
         // UIManager.instance.CreateUI<GeneralFadePage>();
     }
@@ -33,7 +40,8 @@ public class GameManager : Singleton<GameManager>
     {
         UIManager.instance.Update();
         stateMachine.currentState.HandleUpdate();
-        
+        mousePos3 = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos2 = new Vector2(mousePos3.x, mousePos3.y);
         // GM only in editor
 #if UNITY_EDITOR
         //if (Input.GetKeyUp(KeyCode.G))

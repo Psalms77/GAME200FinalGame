@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SO_Player_Config
   m_EditorClassIdentifier: 
   jumpHeight: 13.88
-  runningSpeed: 6.51
+  runningSpeed: 8.93
   jumpGravityScale: 0
   inputRate: 1
   coyoteTime: 0.5
@@ -22,7 +22,7 @@ MonoBehaviour:
   inputCacheTime: 0.25
   gravityFalling: 1.8
   ascendingGravityStep: 0.028
-  runningAcceleration: 2.53
+  runningAcceleration: 2.27
   runningBrakingAbility: 3
   smallestJumpFrameCount: 4
   jumpSoundAsset: {fileID: 0}

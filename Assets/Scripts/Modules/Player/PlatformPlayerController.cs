@@ -45,6 +45,10 @@ public class PlatformPlayerController : Observer
     [HideInInspector]
     public bool isCoyote = false;
     
+    //private bool isPulling = false;
+    public GameObject blackhole;
+    public Vector2 velo;
+
     protected void Awake()
     {
         jumpHeight = playerConfig.jumpHeight;
@@ -71,17 +75,18 @@ public class PlatformPlayerController : Observer
         //animator = transform.Find("sprite").GetComponent<Animator>();
         stateMachine = new PlayerFSM(this);
         rig.gravityScale = initGravityScale;
-
+        
 
     }
     void Start()
     {
-
+        //blackhole = Resources.Load("Prefabs/BlackHole.prefab", typeof(GameObject)) as GameObject;
     }
     
     void Update()
     {
         stateMachine.currentState.HandleUpdate();
+        velo = rig.velocity;
     }
 
     private void FixedUpdate()
@@ -129,6 +134,8 @@ public class PlatformPlayerController : Observer
         rig.velocity = new Vector2(speed, rig.velocity.y);
     }
 
+
+
     public void HandleJumpInput()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !isJumpInput)
@@ -140,6 +147,19 @@ public class PlatformPlayerController : Observer
         {
             yield return new WaitForSeconds(inputCacheTime);
             isJumpInput = false;
+        }
+    }
+
+
+    public void HandleBlackHoleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Instantiate(blackhole, GameManager.instance.mousePos2, Quaternion.identity);
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            EventManager.SendNotification(EventName.BlackHolePull);
         }
     }
 
