@@ -180,7 +180,7 @@ public class PlayerFSM : BaseFSM
         }
         public override void HandleUpdate()
         {
-            controller.rig.gravityScale = 7;
+            controller.rig.gravityScale = 3.6f;
             controller.HorizontalJumpingMove();
             // left and right flip
             var inputSpeed = Input.GetAxis("Horizontal");

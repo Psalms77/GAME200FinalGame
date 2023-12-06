@@ -40,7 +40,7 @@ public class GameManager : Singleton<GameManager>
     {
         UIManager.instance.Update();
         stateMachine.currentState.HandleUpdate();
-
+        UpdateMousePosition();
 
 
         // GM only in editor

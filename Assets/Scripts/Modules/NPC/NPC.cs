@@ -5,8 +5,7 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     private GameObject ehint;
-    public Dialogue dialogue;
-
+    public GameObject dialogBox;
     private void Awake()
     {
         ehint = this.transform.GetChild(0).gameObject;
@@ -26,7 +25,7 @@ public class NPC : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        DialogSystem.instance.StartDialogue(dialogue);
+        dialogBox.SetActive(true);
     }
 
 
@@ -61,7 +60,6 @@ public class NPC : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-
             ehint.SetActive(false);
         }
     }

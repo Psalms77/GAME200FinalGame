@@ -1,0 +1,46 @@
+PENNY
+What is this? It doesn’t look like it was made by people.
+GUARDIAN
+CHAR_PENUMBRA is <CORRECT == True>
+PENNY
+You talk. Are you… Did you take my mom’s memories?! Everyone’s memories?!
+GUARDIAN
+<CORRECT == True>
+PENNY
+Why?! Why would you do such a thing?!
+GUARDIAN 
+Need [FOOD/FUEL/MOTIVATION] for [MOVE/REJOIN] distant [ALLIES/LIMBS]. Query: CHAR_PENUMBRA [DAMAGED/PAINED/UPSET]? 
+PENNY
+Josie, mom, all the others. We need to remember our loved ones. They’re a huge part of who we are!
+GUARDIAN
+<NEW INFO RECEIVED>. But CHAR_GUARDIAN needs [FOOD/FUEL/MOTIVATION].
+PENNY
+What if… what if I powered you up with my magic? Could you give everyone’s memories back then?
+GUARDIAN
+<unknown>
+PENNY
+Alright, here goes! For mom, for everyone! I’m putting my all into this!
+GUARDIAN
+…
+GUARDIAN
+[FOOD/FUEL/MOTIVATION] storage capacity at:
+GUARDIAN
+1008%
+GUARDIAN
+Releasing [str:”memories”]. CHAR_PENUMBRA [HAPPY/HEALED]?
+PENNY
+I did it! You did it! Yeah, you made me happy. Thanks so much. Good luck on your trip, Guardian. 
+AUNT MALINA
+Penny, I’m with your mother. She’s back!
+PENNY
+Yeah, that was me. We shouldn’t have any more sudden memory issues on the moon.
+MOM
+You did such a good job, hon. I’m proud of you.
+PENNY
+Thanks mom.
+MOM
+…Suit, read out magic levels.
+PENNY’S SUIT
+PENUMBRA MAGIC LEVELS AT: 0.04%.
+PENNY
+MOOOM!!!

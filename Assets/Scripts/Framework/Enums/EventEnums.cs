@@ -6,6 +6,7 @@ public enum EventName
     BlackHolePull,
     BlackHolePullEnd,
 
+    DialogBoxOpen,          // param1: gameobject dialogbox (UI Prefab)
     
 }
 

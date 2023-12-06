@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class dialogSystem : MonoBehaviour
+public class dialogSystem : Observer
 {
     //UI display
     public TMP_Text textLabel;
@@ -16,7 +16,7 @@ public class dialogSystem : MonoBehaviour
     public int index;
 
     //string list
-    List<string> textList = new List<string>();
+    public List<string> textList = new List<string>();
 
     //wait time
     public float textSpeed;
@@ -45,7 +45,7 @@ public class dialogSystem : MonoBehaviour
     }
     private void OnEnable()
     {
-
+        index = 0;
         setTextUI();
 
     }
@@ -53,7 +53,7 @@ public class dialogSystem : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.F) && index == textList.Count)//text finished
         {
-            // free player here
+            // unfreeze player here
             gameObject.SetActive(false);
             index = 0;
             return;
@@ -86,6 +86,10 @@ public class dialogSystem : MonoBehaviour
     {
         textFinished = false;
         textLabel.text = "";
+        if (index == textList.Count)
+        {
+            yield break;
+        }
         switch (textList[index].Trim())//Trim()        trim the extra space 
         {
             case "Penny":
@@ -102,6 +106,7 @@ public class dialogSystem : MonoBehaviour
         for (int i = 0; i < textList[index].Length; i++) 
         {
             textLabel.text += textList[index][i];
+
             yield return new WaitForSeconds(textSpeed); 
         }
         index++;

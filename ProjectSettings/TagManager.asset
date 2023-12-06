@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - 2dSpace
+  - BlackHole
   layers:
   - Default
   - TransparentFX

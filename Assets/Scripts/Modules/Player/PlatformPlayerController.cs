@@ -155,7 +155,15 @@ public class PlatformPlayerController : Observer
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(blackhole, GameManager.instance.mousePos3, Quaternion.identity);
+            if (GameObject.FindGameObjectsWithTag("BlackHole").Length == 0)
+            {
+                Instantiate(blackhole, GameManager.instance.mousePos3, Quaternion.identity);
+            }
+            else if (GameObject.FindGameObjectsWithTag("BlackHole").Length > 0)
+            {
+                GameObject.FindGameObjectsWithTag("BlackHole")[0].transform.position = GameManager.instance.mousePos3;
+            }
+            
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {

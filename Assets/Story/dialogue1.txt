@@ -1,0 +1,30 @@
+ARTEMISIA(MOM)
+Alright Penny, Systems check.
+PENUMBRA(PENNY)
+Come on, Mom! I’m a big witch, we don’t need to go through this every time.
+AUNT MALINA
+She’s right, Artemisia. You’re smothering her.
+PENNY
+See, Aunt Malina agrees!
+MOM
+I don’t want to hear it. Safety is always important, hon. Suit, read out.
+PENNY’S SUIT
+PRESS W,A,S,D TO MOVE. PRESS SPACE TO JUMP. PRESS LEFT CLICK TO CAST A GRAVITY WELL AND RIGHT CLICK TO ACTIVATE.
+MOM
+Sounds good. Mask sealed?
+PENNY
+Mask sealed. Who needs help today?
+MOM
+There have been reports of memory loss all over the city. I’m going to talk to the patients at the north end, while you… go talk to Josie, down the street.
+PENNY
+MOOOM! Come on!
+MOM
+Moon Witches don’t complain, hon. Remember to collect mana on the way to power your spells!
+AUNT MALINA
+Psst, Penny. I may or may not have left you a gift on your route.
+PENNY
+Noted. Love you both!
+MALINA & MOM
+<3
+PENNY
+Alright, I’m off!
