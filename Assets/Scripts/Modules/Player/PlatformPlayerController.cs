@@ -155,7 +155,7 @@ public class PlatformPlayerController : Observer
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(blackhole, GameManager.instance.mousePos2, Quaternion.identity);
+            Instantiate(blackhole, GameManager.instance.mousePos3, Quaternion.identity);
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
