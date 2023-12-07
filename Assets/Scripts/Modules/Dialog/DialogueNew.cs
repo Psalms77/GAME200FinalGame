@@ -34,8 +34,12 @@ public class dialogSystem : Observer
 
     private void Awake()
     {
-        Dic.Add("Penny", face[0]);
-        Dic.Add("Mom", face[1]);
+        //Dic.Add("Penny", face[0]);
+        //Dic.Add("Mom", face[1]);
+        //Dic.Add("suit", face[2]);
+        //Dic.Add("aunt", face[3]);
+        //Dic.Add("Josie", face[4]);
+        //Dic.Add("Guardian", face[5]);
         icon.sprite = face[0];
         textSpeed = textOriginal;
         GetTextFromFile(textFile);
@@ -93,12 +97,37 @@ public class dialogSystem : Observer
         switch (textList[index].Trim())//Trim()        trim the extra space 
         {
             case "PENNY":
-                icon.sprite = Dic["Penny"];
+                //icon.sprite = Dic["Penny"];
                 nameLabel.text = textList[index].ToString();
                 index++;
                 break;
             case "MOM":
-                icon.sprite = Dic["Mom"];
+                //icon.sprite = Dic["Mom"];
+                nameLabel.text = textList[index].ToString();
+                index++;
+                break;
+            case "PENNY¡¯S SUIT":
+                //icon.sprite = Dic["suit"];
+                nameLabel.text = textList[index].ToString();
+                index++;
+                break;
+            case "AUNT MALINA":
+                //icon.sprite = Dic["aunt"];
+                nameLabel.text = textList[index].ToString();
+                index++;
+                break;
+            case "MALINA & MOM":
+                //icon.sprite = Dic["Mom"];
+                nameLabel.text = textList[index].ToString();
+                index++;
+                break;
+            case "JOSIE":
+                //icon.sprite = Dic["Josie"];
+                nameLabel.text = textList[index].ToString();
+                index++;
+                break;
+            case "GUARDIAN":
+                //icon.sprite = Dic["Guardian"];
                 nameLabel.text = textList[index].ToString();
                 index++;
                 break;
