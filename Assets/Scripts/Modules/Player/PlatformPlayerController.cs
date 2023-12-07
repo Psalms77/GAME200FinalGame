@@ -44,6 +44,8 @@ public class PlatformPlayerController : Observer
     public float groundSpeed;
     [HideInInspector]
     public bool isCoyote = false;
+    [HideInInspector]
+
     
     //private bool isPulling = false;
     public GameObject blackhole;
@@ -70,9 +72,9 @@ public class PlatformPlayerController : Observer
         rig = GetComponent<Rigidbody2D>();
         groundCheckPoint = transform.Find("GroundCheckPoint").gameObject;
         //walkingParticle = transform.Find("Walk Particle").gameObject;
-        spriteObj = transform.Find("sprite").gameObject;
+        //spriteObj = transform.Find("sprite").gameObject;
         //fireObj = transform.Find("Fire Particle").gameObject;
-        //animator = transform.Find("sprite").GetComponent<Animator>();
+        animator = transform.Find("model").GetComponent<Animator>();
         stateMachine = new PlayerFSM(this);
         rig.gravityScale = initGravityScale;
         

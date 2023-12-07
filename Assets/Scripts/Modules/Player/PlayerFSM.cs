@@ -48,14 +48,14 @@ public class PlayerFSM : BaseFSM
             // Debug.Log("idle enter");
             controller.rig.gravityScale = controller.initGravityScale;
             controller.groundSpeed = 0;
-            //controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
-            controller.spriteObj.GetComponent<SpriteRenderer>().enabled = true;
+            controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            //controller.spriteObj.GetComponent<SpriteRenderer>().enabled = true;
             //controller.walkingParticle.SetActive(false);
         }
         public override void HandleUpdate()
         {
-            //controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
-            
+            controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            controller.animator.SetBool("isgrounded", controller.IsOnGround());
             controller.HandleBlackHoleInput();
             controller.HandleJumpInput();
             controller.HorizontalMove();
@@ -122,6 +122,8 @@ public class PlayerFSM : BaseFSM
         }
         public override void HandleUpdate()
         {
+            controller.animator.SetBool("isgrounded", controller.IsOnGround());
+
             controller.rig.gravityScale = 0;
             // left and right flip
             var inputSpeed = Input.GetAxis("Horizontal");
@@ -180,6 +182,8 @@ public class PlayerFSM : BaseFSM
         }
         public override void HandleUpdate()
         {
+            controller.animator.SetBool("isgrounded", controller.IsOnGround());
+
             controller.rig.gravityScale = 3.6f;
             controller.HorizontalJumpingMove();
             // left and right flip
@@ -256,7 +260,8 @@ public class PlayerFSM : BaseFSM
         }
         public override void HandleUpdate()
         {
-            //controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            controller.animator.SetBool("isgrounded", controller.IsOnGround());
 
             controller.HandleBlackHoleInput();
             controller.HandleJumpInput();
@@ -357,7 +362,8 @@ public class PlayerFSM : BaseFSM
         }
         public override void HandleUpdate()
         {
-            //controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            controller.animator.SetFloat("horizontal_speed", MathF.Abs(controller.groundSpeed));
+            controller.animator.SetBool("isgrounded", controller.IsOnGround());
 
             controller.HandleBlackHoleInput();
             controller.HandleJumpInput();
@@ -431,10 +437,10 @@ public class PlayerFSM : BaseFSM
             controller.rig.gravityScale = 0;
             //controller.animator.SetTrigger("is_die");
             controller.transform.DOScale(3, 0.4f);
-            controller.spriteObj.GetComponent<SpriteRenderer>().DOColor(new Color(128, 0, 0), 0.3f).onComplete = () =>
-            {
-                controller.spriteObj.GetComponent<SpriteRenderer>().color = Color.white;;
-            };
+            //controller.spriteObj.GetComponent<SpriteRenderer>().DOColor(new Color(128, 0, 0), 0.3f).onComplete = () =>
+            //{
+            //    controller.spriteObj.GetComponent<SpriteRenderer>().color = Color.white;;
+            //};
         }
         public override void HandleUpdate()
         {
