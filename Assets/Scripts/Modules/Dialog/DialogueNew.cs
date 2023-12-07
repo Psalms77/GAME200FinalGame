@@ -92,12 +92,12 @@ public class dialogSystem : Observer
         }
         switch (textList[index].Trim())//Trim()        trim the extra space 
         {
-            case "Penny":
+            case "PENNY":
                 icon.sprite = Dic["Penny"];
                 nameLabel.text = textList[index].ToString();
                 index++;
                 break;
-            case "Mom":
+            case "MOM":
                 icon.sprite = Dic["Mom"];
                 nameLabel.text = textList[index].ToString();
                 index++;
