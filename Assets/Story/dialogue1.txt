@@ -1,6 +1,6 @@
-ARTEMISIA(MOM)
+MOM
 Alright Penny, Systems check.
-PENUMBRA(PENNY)
+PENNY
 Come on, Mom! I’m a big witch, we don’t need to go through this every time.
 AUNT MALINA
 She’s right, Artemisia. You’re smothering her.
