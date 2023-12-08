@@ -11,7 +11,7 @@ public class PotionCount : Observer
     public TMP_Text potionNumText;
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         AddEventListener(EventName.PotionCollected, args =>
         {
             potionCount++;
