@@ -16,8 +16,8 @@ MonoBehaviour:
   runningSpeed: 8.93
   jumpGravityScale: 0
   inputRate: 1
-  coyoteTime: 0.5
-  groundCheckBoxSize: {x: 0.45, y: 0.1}
+  coyoteTime: 0.25
+  groundCheckBoxSize: {x: 0.7, y: 1}
   initGravityScale: 3
   inputCacheTime: 0.25
   gravityFalling: 1.2
