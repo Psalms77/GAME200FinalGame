@@ -579,8 +579,9 @@ MonoBehaviour:
   textOriginal: 0
   textJumpSpeed: 0
   face:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 14ee882f6d0dd66479472008885be2e8, type: 3}
+  - {fileID: 21300000, guid: 5a3fa5e142e33764992aea224b3390b8, type: 3}
+  - {fileID: 21300000, guid: 14ee882f6d0dd66479472008885be2e8, type: 3}
+  - {fileID: 21300000, guid: ff790112ca2b1ef44ab930d3fa93195f, type: 3}
+  - {fileID: 21300000, guid: d7214dae722622d4995316dff4cf2aa4, type: 3}
+  - {fileID: 21300000, guid: 5ed845ad2e8f8bc4eba061faf64faebb, type: 3}
