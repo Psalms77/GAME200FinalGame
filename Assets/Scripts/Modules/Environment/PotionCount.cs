@@ -15,7 +15,7 @@ public class PotionCount : Observer
         AddEventListener(EventName.PotionCollected, args =>
         {
             potionCount++;
-            audioSource.PlayOneShot(potionSound);
+            //audioSource.PlayOneShot(potionSound);
         });
     }
     

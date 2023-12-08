@@ -17,7 +17,7 @@ MonoBehaviour:
   jumpGravityScale: 0
   inputRate: 1
   coyoteTime: 0.25
-  groundCheckBoxSize: {x: 0.7, y: 1}
+  groundCheckBoxSize: {x: 0.5, y: 0.5}
   initGravityScale: 3
   inputCacheTime: 0.25
   gravityFalling: 1.2

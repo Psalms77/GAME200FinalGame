@@ -13,7 +13,7 @@ public class Potion : Observer
             
             EventManager.SendNotification(EventName.PotionCollected); 
 
-
+            Debug.Log("Potion Collected");
             Destroy(this.gameObject);
         }
     }
