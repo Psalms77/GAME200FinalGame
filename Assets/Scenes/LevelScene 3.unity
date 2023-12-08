@@ -7282,6 +7282,10 @@ PrefabInstance:
       propertyPath: textFile
       value: 
       objectReference: {fileID: 4900000, guid: 85faaf5828e31aa4d8c2a232c113b5e8, type: 3}
+    - target: {fileID: 7851737185205839867, guid: eaba7382b39b1234dbd399d8bb883cba, type: 3}
+      propertyPath: textFile
+      value: 
+      objectReference: {fileID: 4900000, guid: cdf1b7a9f3e31bf4e9846daa6a992502, type: 3}
     - target: {fileID: 8301627775699369625, guid: eaba7382b39b1234dbd399d8bb883cba, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
