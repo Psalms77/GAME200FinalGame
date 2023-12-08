@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PotionCount : Observer
 {
-
-
+    public AudioClip potionSound;
+    public AudioSource audioSource;
     public int potionCount = 0;
     public TMP_Text potionNumText;
     private void Awake()
@@ -15,6 +15,7 @@ public class PotionCount : Observer
         AddEventListener(EventName.PotionCollected, args =>
         {
             potionCount++;
+            audioSource.PlayOneShot(potionSound);
         });
     }
     
