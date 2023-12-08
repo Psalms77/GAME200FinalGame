@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - 2dSpace
   - BlackHole
+  - Collectible
   layers:
   - Default
   - TransparentFX
