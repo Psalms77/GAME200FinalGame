@@ -58,6 +58,7 @@ public class dialogSystem : Observer
         if (Input.GetKeyUp(KeyCode.F) && index == textList.Count)//text finished
         {
             // unfreeze player here
+            EventManager.SendNotification(EventName.DialogBoxClose);
             gameObject.SetActive(false);
             index = 0;
             return;

@@ -17,7 +17,7 @@ public class GameManager : Singleton<GameManager>
     {
         base.Awake();
       
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         AddEventListener(EventName.BlackHolePull, args =>
         {
             //isPulling = !isPulling;

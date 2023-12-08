@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Name
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dialogues
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 4410554447420639095}
   - component: {fileID: 331300668931806543}
   - component: {fileID: 7735951910092263461}
-  - component: {fileID: 5546715772821515686}
+  - component: {fileID: 7851737185205839867}
   m_Layer: 5
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5546715772821515686
+--- !u!114 &7851737185205839867
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -572,7 +572,7 @@ MonoBehaviour:
   textLabel: {fileID: 2641126514330241132}
   nameLabel: {fileID: 7235378309935750093}
   icon: {fileID: 5656015091685040647}
-  textFile: {fileID: 4900000, guid: 853a16be32ccdb44ba1d75231ef00d5b, type: 3}
+  textFile: {fileID: 0}
   index: 0
   textList: []
   textSpeed: 0
@@ -583,5 +583,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5a3fa5e142e33764992aea224b3390b8, type: 3}
   - {fileID: 21300000, guid: 14ee882f6d0dd66479472008885be2e8, type: 3}
   - {fileID: 21300000, guid: ff790112ca2b1ef44ab930d3fa93195f, type: 3}
+  - {fileID: 21300000, guid: 5a3fa5e142e33764992aea224b3390b8, type: 3}
   - {fileID: 21300000, guid: d7214dae722622d4995316dff4cf2aa4, type: 3}
-  - {fileID: 21300000, guid: 5ed845ad2e8f8bc4eba061faf64faebb, type: 3}
