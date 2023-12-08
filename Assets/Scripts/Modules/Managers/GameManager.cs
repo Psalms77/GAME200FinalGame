@@ -13,6 +13,8 @@ public class GameManager : Singleton<GameManager>
     public Vector3 mousePos3;
     public Vector2 mousePos2;
     public bool isPulling = false;
+    //public int potionCount = 0;
+
     protected override void Awake()
     {
         base.Awake();
@@ -23,7 +25,7 @@ public class GameManager : Singleton<GameManager>
             //isPulling = !isPulling;
 
         });
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 165;
 
     }
 

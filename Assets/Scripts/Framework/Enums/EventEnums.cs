@@ -8,5 +8,7 @@ public enum EventName
 
     DialogBoxOpen,          // param1: gameobject dialogbox (UI Prefab)
     DialogBoxClose,         // 
+
+    PotionCollected,        // 
 }
 
