@@ -20,10 +20,10 @@ public class GameManager : Singleton<GameManager>
         base.Awake();
       
         //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(GameObject.Find("AudioManager"));
         AddEventListener(EventName.BlackHolePull, args =>
         {
             //isPulling = !isPulling;
-
         });
         Application.targetFrameRate = 165;
 
