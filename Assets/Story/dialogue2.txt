@@ -11,7 +11,7 @@ Penny, how can I ‘member what I don’t ‘member?
 PENNY
 Good point. Um, tell me how we first met?
 JOSIE
-I’d just bought the farm, and I heard rumors of a magic family living nearby from the neighbors. Thought it was silly, no offense.
+Few years ago, early days of the colony. I’d just bought the farm, and I heard rumors of a magic family living nearby from the neighbors. Thought it was silly, no offense.
 PENNY
 None taken. But magic is cool.
 JOSIE
@@ -23,7 +23,7 @@ Run this farm myself, don’t I?
 PENNY
 No. No, your husband Burt was there! You don’t know him?
 JOSIE
-Know who?
+I... don't. Well how 'bout that.
 AUNT MALINA
 Penny, come in. It’s an emergency.
 PENNY

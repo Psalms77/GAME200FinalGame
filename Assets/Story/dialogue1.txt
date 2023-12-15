@@ -19,9 +19,11 @@ There have been reports of memory loss all over the city. I’m going to talk to
 PENNY
 MOOOM! Come on!
 MOM
-Moon Witches don’t complain, hon. Remember to collect mana on the way to power your spells!
+Moon Witches don’t complain, hon. Be grateful I'm even letting you participate.
+PENNY
+Mom, the moon is totally safe, besides the unfinished atmosphere. But... okay, I've gotta start somewhere I guess.
 AUNT MALINA
-Psst, Penny. I may or may not have left you a gift on your route.
+Psst, Penny. I may or may not have left you some potions on your route. Some gifts to keep your strength up.
 PENNY
 Noted. Love you both!
 MALINA & MOM
