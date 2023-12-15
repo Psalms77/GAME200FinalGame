@@ -4091,7 +4091,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.4641776, g: 0.5175666, b: 0.5377358, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -6696,7 +6696,9 @@ GameObject:
   - component: {fileID: 1483392105}
   - component: {fileID: 1483392104}
   - component: {fileID: 1483392107}
-  m_Layer: 0
+  - component: {fileID: 1483392109}
+  - component: {fileID: 1483392108}
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -6811,6 +6813,83 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1483392108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483392103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 423b060ee37c5d843a6de44f39d377eb, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &1483392109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483392103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1483392106}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &1485336376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6950,6 +7029,50 @@ PrefabInstance:
     - target: {fileID: 4211663990183750283, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
       propertyPath: m_Name
       value: potionPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642849228059488207, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642849228059488207, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a295c588d01c9c24eae760aa45312541, type: 2}
+    - target: {fileID: 4642849228059488207, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642849228059488207, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2598708645684704432, guid: a295c588d01c9c24eae760aa45312541, type: 2}
+    - target: {fileID: 4642849228059488207, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976500979374381628, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976500979374381628, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a295c588d01c9c24eae760aa45312541, type: 2}
+    - target: {fileID: 5976500979374381628, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976500979374381628, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2598708645684704432, guid: a295c588d01c9c24eae760aa45312541, type: 2}
+    - target: {fileID: 5976500979374381628, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102933112444801341, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 359
       objectReference: {fileID: 0}
     - target: {fileID: 8891564315388113775, guid: 6b9ab60382f8d5146a36ead79ceed7f2, type: 3}
       propertyPath: m_Pivot.x
