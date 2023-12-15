@@ -67,7 +67,7 @@ public partial class AudioManager : SingletonNoMono<AudioManager>
     //     musicSource.Play();
     //     currentBGMPath = path;
     // }
-    //
+    
     // public void PlayBGMDontStop(string path = "", bool isLoop = true)
     // {
     //     if (path == currentBGMPath && musicSource.isPlaying)
@@ -79,7 +79,7 @@ public partial class AudioManager : SingletonNoMono<AudioManager>
     //         musicSource.Play();
     //         return;
     //     }
-    //
+    
     //     SetAudioSource(musicSource, path, isLoop, 0.15f * globalVolume);
     //     musicSource.Play();
     //     currentBGMPath = path;

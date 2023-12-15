@@ -15,6 +15,9 @@ public class PlatformPlayerController : Observer
     private Vector2 groundCheckBoxSize;
     private GameObject fireObj;
     private float inputCacheTime;
+    public AudioClip createWell;
+    public AudioClip wellPull;
+    public AudioSource audioSource;
     
     public float jumpGravityScale{ get; private set; }
     public float initGravityScale{ get; private set; }
@@ -164,12 +167,14 @@ public class PlatformPlayerController : Observer
             else if (GameObject.FindGameObjectsWithTag("BlackHole").Length > 0)
             {
                 GameObject.FindGameObjectsWithTag("BlackHole")[0].transform.position = GameManager.instance.mousePos3;
+                audioSource.PlayOneShot(createWell);
             }
             
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             EventManager.SendNotification(EventName.BlackHolePull);
+            audioSource.PlayOneShot(wellPull);
         }
     }
 
